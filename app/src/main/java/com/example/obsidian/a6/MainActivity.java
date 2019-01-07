@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //创建一个填充物,用于填充Toast
         LayoutInflater inflater = getLayoutInflater();
 
-        //填充物来自的xml文件,在这个改成一个LinearLayout
+        //填充物来自的xml文件,在这里改成一个LinearLayout
         LinearLayout linearLayout = (LinearLayout) inflater.inflate(R.layout.toast, null);
 
         //找到xml里面的组件，设置组件里面的具体内容
