@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:text="会员名:"
+                  android:textSize="15dp"/>
+        <EditText android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:hint="请输入会员名称"
+                  android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:text="电话: "
+                  android:textSize="15dp"/>
+        <EditText android:id="@+id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp"
+                  android:layout_weight="1" android:hint="请输入联系电话"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:text="生日: "
+                  android:textSize="15dp"/>
+        <EditText android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:hint="格式为yyyy/mm/dd"
+                  android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:text="Email: "
+                  android:textSize="15dp"/>
+        <EditText android:id="@+id/email" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:hint="请输入正确的电子邮箱地址"
+                  android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="20dp" android:text="性别: "
+                  android:textSize="15dp"/>
+        <RadioGroup android:id="@+id/sex" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:orientation="horizontal">
+            <RadioButton android:id="@+id/man" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:text="男"/>
+            <RadioButton android:id="@+id/woman" android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                         android:layout_marginTop="3dp" android:text="女"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:textSize="15dp"
+                  android:text="所在地："/>
+        <Spinner android:id="@+id/adr" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp" android:layout_marginLeft="10dp"
+                 android:entries="@array/city"></Spinner>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:text="偏好公开："/>
+        <ToggleButton android:id="@+id/toggleButton" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginLeft="6dp"
+                      android:layout_marginTop="10dp" android:textOff="关" android:textOn="开"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/hobby" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:visibility="gone">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp" android:layout_marginTop="6dp" android:textSize="15dp"
+                  android:text="爱好选择:" android:textColor="@color/colorPrimaryDark"/>
+        <CheckBox android:id="@+id/hobby1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginTop="6dp" android:layout_marginLeft="20dp" android:text="游泳"/>
+        <CheckBox android:id="@+id/hobby2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginTop="6dp" android:layout_marginLeft="20dp" android:text="健身"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:textSize="15dp"
+                  android:text="区域："/>
+        <AutoCompleteTextView android:id="@+id/adr1" android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:layout_marginLeft="6dp"
+                              android:layout_marginTop="10dp" android:hint="输入所在区域" android:layout_weight="1"/>
+    </LinearLayout>
+    <Button android:id="@+id/go" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="注册"/>
+</LinearLayout>
